@@ -51,7 +51,7 @@ def save_doc(vector_store: VectorStore, question: str, answer: str):
 
 
 def get_similar_answer(
-    vector_store, query: str, show_options=False, similarity_threshold=0.85
+    vector_store, query: str, show_options=False, similarity_threshold=0.75
 ):
     results = vector_store.similarity_search_with_score(query, k=3)
     most_similar = None
